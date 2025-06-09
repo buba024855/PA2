@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aventuras - FanatiAventur</title>
+  <link rel="stylesheet" href="../css/estilos.css" />
+  <link rel="icon" href="../favicon/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>FanatiAventur</h1>
+      <img src="../imagenes/cabecera.png" alt="Cabecera de aventura" />
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="aventuras.html">Aventura</a></li>
+        <li><a href="contacto.html">Contáctenos</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="mapa-actividades">
+  <h2> Mapa de Actividades de Aventura</h2>
+  <div class="contenedor-mapa">
+    <img src="../imagenes/mapa-aventuras.jpg" alt="Mapa de Aventuras" usemap="#mapa-aventuras" class="imagen-mapa" />
+    
+
+    <div class="etiqueta" style="top: 55px; left: 35px;">Ala Delta</div>
+    <div class="etiqueta" style="top: 110px; left: 190px;">Barranquismo</div>
+    <div class="etiqueta" style="top: 60px; left: 320px;">Buceo</div>
+    <div class="etiqueta" style="top: 160px; left: 350px;">Escalada</div>
+
+    <map name="mapa-aventuras">
+      <area shape="rect" coords="30,50,130,150" href="#ala-delta" alt="Ala Delta" />
+      <area shape="circle" coords="200,120,50" href="#barranquismo" alt="Barranquismo" />
+      <area shape="poly" coords="300,40,350,70,400,50,420,90,380,130" href="#buceo" alt="Buceo" />
+      <area shape="rect" coords="450,100,550,200" href="#escalada" alt="Escalada en hielo" />
+    </map>
+  </div>
+</section>
+
+
+
+      <section>
+        <h2>Imagen adaptativa</h2>
+        <picture>
+          <source media="(min-width: 800px)" srcset="../imagenes/aventura-grande.jpg" />
+          <source media="(min-width: 400px)" srcset="../imagenes/aventura-mediana.jpg" />
+          <img src="../imagenes/aventura-pequena.jpg" alt="Imagen adaptativa de aventura" style="width:100%;" />
+        </picture>
+      </section>
+
+      <section id="ala-delta" class="actividad">
+        <h3>Ala Delta</h3>
+        <p>
+          El Ala Delta es un deporte extremo donde vuelas planeando con una
+          estructura ligera desde montañas o acantilados, disfrutando de la
+          adrenalina y vistas espectaculares.
+        </p>
+      </section>
+
+      <section id="barranquismo" class="actividad">
+        <h3>Barranquismo</h3>
+        <p>
+          El barranquismo es la actividad de descender por cañones y ríos,
+          usando técnicas de rápel, saltos y natación. Es ideal para quienes
+          buscan aventura y contacto directo con la naturaleza.
+        </p>
+      </section>
+
+      <section id="buceo" class="actividad">
+        <h3>Buceo</h3>
+        <p>
+          El buceo es la exploración del mundo submarino con equipo especial, para
+          descubrir paisajes, fauna y flora acuática, ideal para los amantes del
+          mar y la aventura.
+        </p>
+      </section>
+
+      <section id="escalada" class="actividad">
+        <h3>Escalada en Hielo</h3>
+        <p>
+          La escalada en hielo consiste en ascender paredes de hielo con piolets y
+          crampones, combinando fuerza y técnica. Es un reto para aventureros con
+          espíritu extremo.
+        </p>
+      </section>
+
+      <section class="tabla-deportes">
+        <h2>Deportes de Aventura Populares</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Deporte</th>
+              <th>Ubicación Recomendada</th>
+              <th>Dificultad</th>
+              <th>Temporada Ideal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Surf</td>
+              <td>Máncora</td>
+              <td>Media</td>
+              <td>Verano</td>
+            </tr>
+            <tr>
+              <td>Buceo</td>
+              <td>Islas Ballestas</td>
+              <td>Alta</td>
+              <td>Primavera</td>
+            </tr>
+            <tr>
+              <td>Montañismo</td>
+              <td>Cordillera Blanca</td>
+              <td>Alta</td>
+              <td>Invierno</td>
+            </tr>
+            <tr>
+              <td>Rafting</td>
+              <td>Río Urubamba</td>
+              <td>Media</td>
+              <td>Otoño</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>FanatiAventur</h2>
+        <figure>
+          <div class="logo-fijo-derecha">
+            <img src="/svg/logo.svg" alt="Logo FanatiAventur" class="logo-svg" />
+          </div>
+          <figcaption>Logotipo representativo de FanatiAventur</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <p>Derechos Reservados - FanatiAventur @ Lima - Perú 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
